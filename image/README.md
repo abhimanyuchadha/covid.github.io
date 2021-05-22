@@ -1,0 +1,1 @@
+Image dir for DOCS
