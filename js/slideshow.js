@@ -45,5 +45,5 @@
          
          function runSlideShow() {
            showSlides();
-      	   setTimeout(runSlideShow, 3000); // Change image every 3 seconds
+      	   setTimeout(runSlideShow, 5000); // Change image every 5 seconds
          }
