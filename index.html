@@ -89,7 +89,7 @@
                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Please fill the pre-consultation form</span>
             </div>
             <div class="w3-panel w3-center">
-               <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfARl9hz3RFhbuHHO-292q1d-cMRi9y7-Y1lw_Qg_Y5XLWgPQ/viewform?embedded=true"  height="400px" width="60%" display="block">Loading…</iframe>
+               <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfARl9hz3RFhbuHHO-292q1d-cMRi9y7-Y1lw_Qg_Y5XLWgPQ/viewform?embedded=true"  height="400px" width="70%" display="block">Loading…</iframe>
             </div>
          </div>
          <!-- Grid -->
@@ -98,7 +98,7 @@
                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">We are available round the clock</span>
             </div>
             <div class="w3-panel w3-center">
-               <iframe height="400px" display="block" width="85%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQqS1WVXHjmFur1DaBpd9o0ytNUDaRVYQHlDtToguCGr3A9s0_K3pzp2OnjchNO6mFWpPX8cfeJ31Ju/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+               <iframe height="400px" display="block" width="90%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQqS1WVXHjmFur1DaBpd9o0ytNUDaRVYQHlDtToguCGr3A9s0_K3pzp2OnjchNO6mFWpPX8cfeJ31Ju/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
             </div>
          </div>
          <!-- Contact -->
@@ -114,56 +114,7 @@
          <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
       </footer>
       
-      <script>
-         // Slideshow
-         var slideIndex = 0;
-         runSlideShow();
-         
-         function plusDivs(n) {
-           showDivs(slideIndex += n);    
-         }
-         
-         function currentDiv(n) {  
-       	  showDivs(slideIndex = n);
-         }
-         
-         function showDivs(n) {
-           var i;
-           var x = document.getElementsByClassName("mySlides");
-           var dots = document.getElementsByClassName("demodots");
-           if (n > x.length) {slideIndex = 1}    
-           if (n < 1) {slideIndex = x.length} ;
-           for (i = 0; i < x.length; i++) {
-             x[i].style.display = "none";  
-           }
-           for (i = 0; i < dots.length; i++) {
-             dots[i].className = dots[i].className.replace(" w3-white", "");
-           }
-           x[slideIndex-1].style.display = "block";  
-           dots[slideIndex-1].className += " w3-white";
-         }
-         
-         function showSlides() {
-           var i;
-           var slides = document.getElementsByClassName("mySlides");
-           var dots = document.getElementsByClassName("demodots");
-           for (i = 0; i < slides.length; i++) {
-             slides[i].style.display = "none";  
-           }
-           slideIndex++;
-           if (slideIndex > slides.length) {slideIndex = 1}    
-           for (i = 0; i < dots.length; i++) {
-             dots[i].className = dots[i].className.replace(" w3-white", "");
-           }
-           slides[slideIndex-1].style.display = "block";  
-           dots[slideIndex-1].className += " w3-white";
-           
-         }
-         
-         function runSlideShow() {
-           showSlides();
-      	   setTimeout(runSlideShow, 3000); // Change image every 3 seconds
-         }
-      </script>
+     <script src="js/slideshow.js"></script> 
+
    </body>
 </html>
