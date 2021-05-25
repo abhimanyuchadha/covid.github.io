@@ -1,4 +1,3 @@
-<script>
          // Slideshow
          var slideIndex = 0;
          runSlideShow();
@@ -48,4 +47,3 @@
            showSlides();
       	   setTimeout(runSlideShow, 3000); // Change image every 3 seconds
          }
-      </script>
